@@ -54,6 +54,23 @@ a {
     font-weight: 400;
 }
 
+.list-custom {
+    .compact {
+        li {
+            p {
+                margin: 0 0 25px;
+                font-size: 18px;
+                line-height: 1;
+                @media(min-width:768px) {
+                    margin: 0 0 35px;
+                    font-size: 20px;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+}
+
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(white, 0.3);
