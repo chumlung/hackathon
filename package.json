@@ -21,6 +21,9 @@
     "jquery": "^1.11.3",
     "prettier": "^1.19.1"
   },
+  "scripts": {
+    "prettier:fix": "prettier --write './**/*.{js,html,scss}'"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/BlackrockDigital/startbootstrap-grayscale.git"
