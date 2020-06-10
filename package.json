@@ -1,28 +1,20 @@
 {
-  "name": "startbootstrap-grayscale",
-  "title": "Grayscale",
-  "version": "3.3.7+1",
-  "homepage": "http://startbootstrap.com/template-overviews/grayscale",
-  "author": "Start Bootstrap",
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
-  },
+  "name": "hack-ed",
+  "version": "0.0.1",
+  "author": "Chumlung",
   "devDependencies": {
     "bootstrap": "^3.3.7",
-    "browser-sync": "^2.13.0",
     "font-awesome": "^4.6.3",
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.0.10",
-    "gulp-header": "^1.8.7",
-    "gulp-less": "^3.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^1.5.4",
     "jquery": "^1.11.3",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "uglify-js": "^3.9.4",
+    "uglifycss": "0.0.29"
   },
   "scripts": {
-    "prettier:fix": "prettier --write './**/*.{js,html,scss}'"
+    "prettier:fix": "prettier --write './**/*.{js,html,scss}'",
+    "uglifyjs": "touch ./js/hacked.min.js && uglifyjs ./js/hacked.js -m -c -o ./js/hacked.min.js",
+    "uglifycss": "touch ./css/hacked.min.css && uglifycss ./css/hacked.css > ./css/hacked.min.css",
+    "build": "npm run uglifyjs && npm run uglifycss"
   },
   "repository": {
     "type": "git",
